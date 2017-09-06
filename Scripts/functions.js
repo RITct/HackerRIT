@@ -1,15 +1,4 @@
 
-var index = 1;
-showImg(index);
-
-function imgPos(n) {
-  showImg(index += n);
-}
-
-function currentImg(n) {
-  showImg(index=n)
-}
-
 function showImg(n) {
   var i;
   var imgs = document.getElementsByClassName("images");
@@ -26,6 +15,17 @@ function showImg(n) {
   imgs[index-1].style.display = "block";
   dots[index-1].className += " active";
 } 
+var index = 1;
+showImg(index);
+
+function imgPos(n) {
+  showImg(index += n);
+}
+
+function currentImg(n) {
+  showImg(index=n)
+}
+
 
 
 

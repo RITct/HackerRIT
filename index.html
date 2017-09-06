@@ -8,55 +8,42 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="Scripts/functions.js"></script>
-  
+      <script> window.onload =function(){  showImg(1)};</script>
 </head>
-<body>
+<body >
   <!--This part is for the login bar-->
                                      <!--------lOGIN BAR-------->
-    <div class="row banner" id="ban">
-        <div id="banner1">
-        <img src="https://avatars3.githubusercontent.com/u/16742127?v=4&s=200" class="logo">
-        <p class="logoTitle">HackerRIT</p>
-      </div>
-         <div id="banner2"><a class="comp" style="text-decoration:none">Competitions</a></div>
-      <div id="banner2"><a class="discuss" style="text-decoration:none">Discussions</a></div>
-      <div id="banner2"><a class="login" style="text-decoration:none">Login</a></div>
-    <div id="banner3"><a class="signup" style="text-decoration:none">SignUp</a></div> 
-
-      
- <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="position:relative;top:20px;left:50px;">Menu
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">LogIn</a></li>
-    <li><a href="#">SignUp</a></li>
-    <li><a href="#">Competitions</a></li>
-    <li><a href="#">Discussions</a></li>
-  </ul>
-</div>    
-</div> 
+ <nav class="navbar navbar-fixed-top" style="background-color:white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logoTitle" style="text-decoration:none;"href="#"><img src="https://avatars3.githubusercontent.com/u/16742127?v=4&s=200" class="logo">HackerRIT</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="key">Competition</a></li>
+        <li><a href="#" class="key">Practice</a></li>
+        <li><a href="#" class="key">Discussions</a></li>
+        <li><a href="#" class="key"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#" class="signup"><span class="glyphicon glyphicon-user"></span>SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
                                  <!--------lOGIN BAR ENDS-------->
    <div class="container-fluid" style="padding-right: 0;padding-left: 0;background-color: #191919;">
   <div class="parallax"> </div>
       <div class="kword">#whatsYourLANGUAGE</div>
    <div class="about text-center">
-    HackerRIT is platform developed by a team of developers and designers from Rajiv Gandhi Institute of Technology, Kottayam.Its where we clash to reach the top.
+    HackerRIT is platform developed by a team of developers and designers from Rajiv Gandhi Institute of Technology, Kottayam.Its where we practice,clash and win to be at the top.
      <br><span style="font-size:28px;font-family:sans sherif"><strong>So Are You Ready To Take The Challenge Or Give The Challenge</strong></span>
-     <div><a href="#" class="btn btn-lg btn-danger">Join A Challenge</a><a href="#" class="btn btn-lg btn-info">Host A Challenge</a></div>
+     <div><a href="#" class="btn btn-lg btn-danger">Join A Challenge</a></div>
    </div>
-     <div class="items">
-       <h1 class="text-center itemTitle">We Conduct</h1>
-       <div class="icons">
-         <div class="icon text-center"><img src="http://www.freelogovectors.net/wp-content/uploads/2015/06/Custom-Coding-Icon.png" >
-           <h3>Coding<br>Competition</h3> </div>
-                     <div class="icon text-center"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/6324-200.png" >
-           <h3>Hackathon</h3> </div>
-                     <div class="icon text-center"><img src="https://locatify.com/wp-content/uploads/2012/11/observer.png" >
-           <h3>Online Treasure<br>Hunt</h3> </div>
-                       <div class="icon text-center"><img src="http://cdn.1001freedownloads.com/icon/thumb/204/add-512.png" >
-           <h3>And More...</h3> </div>
-       </div>
-    </div>
+     
                                   <!-------------------------------->
 <div class="gallery">
 
@@ -86,6 +73,7 @@
   <span class="dot" onclick="currentImg(2)"></span> 
   <span class="dot" onclick="currentImg(3)"></span> 
 </div>
-                                   <!----------------------> 
+                                            <!----------------------> 
+  <hr>                                 
   </div>
   </body>
