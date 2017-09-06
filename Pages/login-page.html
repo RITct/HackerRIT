@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300" rel="stylesheet">
+  <link href="../Scripts/css/login-page.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="Abhiram">
+  <meta name="Keywords" content="login,hackerrit">
+  <meta name="Description" content="loginpage">
+  <title>HackerRIT - Login/Signup</title>
+ </head>
+ <body>
+	<center class="logo">>>HR_<!--<i class="fa fa-h-square"></i>--><br>&nbsp;HackerRIT</center>
+	<!--<center class="logo"><img src="./images/logo.jpeg"></center>-->
+	<div class="main-body">
+		
+		<div class="login-body" id="login-body">
+
+			<form>
+				<br>
+				<br>
+				<!--<label>Enter your E-mail Address:</label>-->
+				<input type="text" name="input-field" placeholder="Enter e-mail address">
+				<br>
+				<br>
+				<br>
+				<!--<label>Enter your Password:</label>-->
+				<input type="password" name="input-field" placeholder="Enter password">
+				<br>
+				<br>
+				<label style="margin-top:1%;"><a href="" class="forgot-pass">Forgot your Password ?</a></label>
+				<center>
+				<button class="login-btn">Sign In</button>
+				</center><br>
+			</form>
+
+				<div class="social-section">
+				<label>Sign-up With:</label>
+				<button class="social facebook"><i class="fa fa-facebook-square"></i>&nbsp;Login with Facebook</button>
+				</div>
+
+		
+		</div>
+	
+		<div class="create-body" id="create-body">
+			<form>
+				<label>Please Fill the following details:</label>
+				<div class="user-name-section">
+				<input type="text" name="create-input-field" placeholder="First name">
+				<input type="text" name="create-input-field" placeholder="Last Name">
+				</div><p></p>
+				<input type="text" name="input-field" placeholder="Enter an Username"><p></p>
+				<input type="text" name="input-field" placeholder="Enter your Email Address">	<p></p>
+				<input type="text" name="input-field" placeholder="Enter a Password"><p></p>
+				<input type="text" name="input-field" placeholder="Confirm your Password">	<p></p>
+				<center><button class="login-btn" style="margin-top:1%;margin-bottom:1%;">Create Account</button></center>
+			</form>
+		</div>
+
+	</div>
+
+
+	<center style="margin-top:2%;">
+	<label class="create-link" id="create-link" onclick="register()">New to HackerRIT? Create Account</label>
+	</center>
+
+	<br>
+
+ <script>
+ //dummy function to swap register & login pages
+
+	function register(x) {
+		if(x == 2) {
+			document.getElementById("login-body").style.display = "block";
+			document.getElementById("create-body").style.display = "none";
+			document.getElementById("login-body").style.animation = "baahubali 1s";
+			document.getElementById("create-link").setAttribute('onclick',"register()");
+			document.getElementById("create-link").innerHTML = "Manually create Account";
+		}
+		//what is this animation name bahubali??
+		else {
+			document.getElementById("login-body").style.display = "none";
+			document.getElementById("create-body").style.display = "block";
+			document.getElementById("create-body").style.animation = "baahubali 1s";
+			document.getElementById("create-link").setAttribute('onclick',"register(2)");
+			document.getElementById("create-link").innerHTML = "<i class='fa fa-arrow-left'></i>&nbsp;Go Back";
+		}
+	}
+
+ </script>
+ </body>
+</html>

@@ -1,0 +1,43 @@
+body{margin:0;padding:0;background-color:#3c3c3c;}
+		.logo{font-family:'roboto condensed';font-size:3em;color:white;margin-top:5%;}
+		.main-body{width:30%;margin:0 auto;margin-top:2%;background-color:white;padding:1%;border-radius:3px;box-shadow:0 0 10px 10px rgba(0,0,0,0.2);}
+		.login-body label {font-family:'roboto';display:block;margin-top:3%;margin-bottom:2%;}
+		input[name="input-field"] {font-family:'roboto condensed';transition-duration:0.3s;font-size:1em;width:95%;padding:2% 2% 2% 2%;border:1px solid rgba(0,0,0,0.2);border-radius:8px;outline:none;}
+		input[name="input-field"]:focus {border:1px solid black;}
+		.forgot-pass {color:#6699ff;font-size:0.8em;font-weight:bold;text-decoration:none;margin-top:0;font-family:'roboto condensed';}
+		.forgot-pass:hover {color:#0066cc;}
+		.login-btn {background-color:#00cc66;outline:none;margin-top:4%;cursor:pointer;border:none;font-size:1.5em;border-radius:4px;padding:2% 0 2% 0;color:white;font-family:'roboto condensed';width:100%;}
+		.login-btn:hover {opacity:0.8;}
+		.login-btn:focus {opacity:0.8;}
+		.login-btn:active {opacity:0.8;}
+		.social {outline:none;cursor:pointer;border:none;font-size:1em;border-radius:2px;padding:2% 3% 2% 3%;color:white;font-family:'verdana';}
+		.social:hover {background-color:#0033cc;}
+		.facebook {background-color:#3366ff;}
+		
+		.create-body {margin:0 auto;margin-top:2%;display:none;}
+		.create-body label {font-family:'roboto';display:block;margin-top:3%;margin-bottom:2%;}
+		.create-link {font-family:'roboto condensed';color:white;margin:0 auto;}
+		.create-link:hover{text-decoration:underline;cursor:pointer;}
+
+		.user-name-section {display:table block;}
+		input[name="create-input-field"] {font-family:'roboto condensed';transition-duration:0.3s;font-size:1em;padding:2% 2% 2% 2%;border:1px solid rgba(0,0,0,0.2);border-radius:8px;outline:none;display:table-cell;margin-right:1%;width:44%;}
+		input[name="create-input-field"]:focus {border:1px solid black;}
+
+		@media screen and (max-width:1300px) {
+		form{width:96%;margin:0 auto;}
+			.logo {font-size:9em;}
+			.main-body{width:90%;}
+			.login-body label {font-size:2.1em;}
+			.create-body label {font-size:2.5em;}
+			input[name="input-field"] {font-size:3em;border:2px solid rgba(0,0,0,0.2);}
+			input[name="create-input-field"] {font-size:3em;border:2px solid rgba(0,0,0,0.2);}
+			.login-btn {font-size:4em;margin-top:5%;}
+			.social {font-size:2.5em;padding:3%;}
+			.social-section{margin-top:10%;width:96%;margin:0 auto;margin-bottom:3%;}
+			.forgot-pass{font-size:0.4em;}
+		}
+
+		@keyframes baahubali {
+			from {opacity:0;}
+			to {opacity:1;}
+		}
