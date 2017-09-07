@@ -34,6 +34,7 @@
     	<input type="text"  id="username"  name="u" placeholder="Username" required="required" /><h2 id="tag"><h2/>
         <input type="password" name="p" placeholder="Password" required="required" /><h2 id="tag2"><h2/>
         <button type="submit" id="login-button" class="btn btn-primary btn-block btn-large">Login</button>
+		<div id="social" >Login with : <a href="">Google+</a>,    <a href="">Github</a></br>,       <a href="">facebook</a></div>
 		<div style="text-align:center;margin-top:20px"><a id="link"><u>create an account</u></a></div>
 		<div style="text-align:center;margin-top:20px"><a id="forgot"><u>forgot password</u></a></div>
 		
@@ -46,8 +47,8 @@
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="position:relative;top:20px;left:50px;">Menu
   </button>
   <ul class="dropdown-menu">
-    <li><a href="#">LogIn</a></li>
-    <li><a href="#">SignUp</a></li>
+    <li><a class="login" href="#">LogIn</a></li>
+    <li><a class="signup" href="#">SignUp</a></li>
     <li><a href="#">Competitions</a></li>
     <li><a href="#">Discussions</a></li>
   </ul>
@@ -190,16 +191,28 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
   position:fixed;
   width:100%;
 }
-
+#social{
+font-size:15px;
+font-family:Baloo tammudu;
+color: white;
+margin:5px;
+margin-top:15px;
+}
 #heading{
   text-align:center;
   color:white;
 }
 #login-box{
   width:40%;
+  max-height:90%;
   border:1px solid white;
-  margin:0 auto;
-  margin-top:10%;
+  margin: auto;
+  position:absolute;
+  overflow:scroll;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
   padding:50px;
   border-radius:30px;
   opacity:0;
@@ -213,10 +226,14 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
 }
-
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 @media screen and (max-width: 500px){
     #login-box{
 	 width:90%;
+	 max-height:90%;
 	 padding:10px;
 	 border-radius:30px;
 	 }
@@ -230,20 +247,54 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 	  $('#link').html('<a id="link2"><u>cancel</u></a>');
 	  $('#forgot').remove();
 	  $('#heading').text('Signup');
-	  $("#login-button").text('Signup');
-	  
-
-	  
+	  $("#login-button").text('Signup');	  
 	  $("#link2").click(function(){	
            location.reload();
 		});
-		});
-	  
-	$("#login-btn").click(function(){
+		});	
+		
+	$(".login").click(function(){
 	   $('#popup').show();
 	   $('#login-box').animate({
 	      opacity:'1'
 	   });
-	 });	
+	 });
+	 
+	 
+	 $(".signup").click(function(){
+	   $('#popup').show();
+	   	  $('#tag').append('<input type="text"  id="email"  name="u" placeholder="email adress" required="required" />');
+	  $('#tag2').append('<input type="text"  id="confpass"  name="u" placeholder="Confirm password" required="required" />');
+	  $('#link').html('<a id="link2"><u>cancel</u></a>');
+	  $('#forgot').remove();
+	  $('#heading').text('Signup');
+	  $("#login-button").text('Signup');
+	  $("#link2").click(function(){	
+           location.reload();
+		});
+		});
+	   $('#login-box').animate({
+	      opacity:'1'
+	   });
+
+var mouse_is_inside = false;
+
+$(document).ready(function()
+{
+    $('#login-box').hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    $("#popup").mouseup(function(){ 
+        if(! mouse_is_inside) {
+		$('#popup').hide();
+		$('#login-box').animate({
+	      opacity:'0'
+	   });
+		}
+    });
+});
 </script>  
   </body>

@@ -59,8 +59,8 @@ a{
   display: inline-block; 
   border:none;
   height:60px;
-  width:100px;
-  font-size: 25px;
+  width:150px;
+  font-size: 20px;
   background-color:#59b1e0;
   color:white;
   transition: .5s;
