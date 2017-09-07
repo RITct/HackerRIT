@@ -29,6 +29,7 @@
 <!---------user-login-popup----------->   
 	<div id="popup">
 	 <div id="login-box">
+	<h1 id="close">X</h1>
 	<h1 id="heading">Login</h1>
     <form method="post">
     	<input type="text"  id="username"  name="u" placeholder="Username" required="required" /><h2 id="tag"><h2/>
@@ -202,6 +203,15 @@ margin-top:15px;
   text-align:center;
   color:white;
 }
+#close{
+font-family:Baloo Tammudu;
+color:white;
+font-size:25px;
+right:1;top:1;
+position:absolute;
+margin-right:10px;
+cursor:pointer;
+}
 #login-box{
   width:40%;
   max-height:90%;
@@ -247,20 +257,20 @@ margin-top:15px;
 	  $('#link').html('<a id="link2"><u>cancel</u></a>');
 	  $('#forgot').remove();
 	  $('#heading').text('Signup');
-	  $("#login-button").text('Signup');	  
+	  $("#login-button").text('Signup');
+	  
+
+	  
 	  $("#link2").click(function(){	
            location.reload();
 		});
-		});	
-		
+		});	  
 	$(".login").click(function(){
 	   $('#popup').show();
 	   $('#login-box').animate({
 	      opacity:'1'
 	   });
 	 });
-	 
-	 
 	 $(".signup").click(function(){
 	   $('#popup').show();
 	   	  $('#tag').append('<input type="text"  id="email"  name="u" placeholder="email adress" required="required" />');
@@ -276,25 +286,12 @@ margin-top:15px;
 	   $('#login-box').animate({
 	      opacity:'1'
 	   });
+    
+	 $("#close").click(function(){	
+           location.reload();
+		});
 
-var mouse_is_inside = false;
 
-$(document).ready(function()
-{
-    $('#login-box').hover(function(){ 
-        mouse_is_inside=true; 
-    }, function(){ 
-        mouse_is_inside=false; 
-    });
 
-    $("#popup").mouseup(function(){ 
-        if(! mouse_is_inside) {
-		$('#popup').hide();
-		$('#login-box').animate({
-	      opacity:'0'
-	   });
-		}
-    });
-});
 </script>  
   </body>
