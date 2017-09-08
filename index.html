@@ -2,6 +2,7 @@
   <!--Welcome To all.Here we included css and bootstrap but not jquery to boost the loading speed-->
     <link rel="stylesheet" href="Scripts/css/beauty.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Lobster" rel="stylesheet">
     <title>HackerRIT</title>
     <script src="core.js"></script> 
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@
 <body >
   <!--This part is for the login bar-->
                                      <!--------lOGIN BAR-------->
+<<<<<<< HEAD
  <nav class="navbar navbar-fixed-top" style="background-color:white;">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -35,6 +37,49 @@
     </div>
   </div>
 </nav> 
+=======
+    <div class="row banner" id="ban">
+        <div id="banner1">
+        <img src="https://avatars3.githubusercontent.com/u/16742127?v=4&s=200" class="logo">
+        <p class="logoTitle">HackerRIT</p>
+      </div>
+         <div id="banner2"><a class="comp" style="text-decoration:none">Competitions</a></div>
+      <div id="banner2"><a class="discuss" style="text-decoration:none">Discussions</a></div>
+      <div id="banner2"><a class="login" id="login-btn" style="text-decoration:none">Login</a></div>
+    <div id="banner3"><a class="signup" style="text-decoration:none">SignUp</a></div> 
+   
+
+
+<!---------user-login-popup----------->   
+	<div id="popup">
+	 <div id="login-box">
+	<h1 id="close">X</h1>
+	<h1 id="heading">Login</h1>
+    <form method="post">
+    	<input type="text"  id="username"  name="u" placeholder="Username" required="required" /><h2 id="tag"><h2/>
+        <input type="password" name="p" placeholder="Password" required="required" /><h2 id="tag2"><h2/>
+        <button type="submit" id="login-button" class="btn btn-primary btn-block btn-large">Login</button>
+		<div id="social" >Login with : <a href="">Google+</a>,    <a href="">Github</a></br>,       <a href="">facebook</a></div>
+		<div style="text-align:center;margin-top:20px"><a id="link"><u>create an account</u></a></div>
+		<div style="text-align:center;margin-top:20px"><a id="forgot"><u>forgot password</u></a></div>
+		
+    </form>
+    </div>
+	</div>
+<!------------------------------->
+      
+ <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="position:relative;top:20px;left:50px;">Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="login" href="#">LogIn</a></li>
+    <li><a class="signup" href="#">SignUp</a></li>
+    <li><a href="#">Competitions</a></li>
+    <li><a href="#">Discussions</a></li>
+  </ul>
+</div>    
+</div> 
+>>>>>>> e7fba53e95e3e2968d048d0177f1fd8068dfcea0
                                  <!--------lOGIN BAR ENDS-------->
    <div class="container-fluid" style="padding-right: 0;padding-left: 0;background-color: #191919;">
   <div class="parallax"> </div>
@@ -82,5 +127,199 @@
   <a href="#"><i class="fa fa-facebook-square" style="font-size:50px;" aria-hidden="true"></i></a>
   <a href="#"><img src="https://avatars3.githubusercontent.com/u/16742127?v=4&s=200" style="border-radius:15px;width:45px;height:45px;position:relative;bottom:14px;"></i></a>
   </div>
+<<<<<<< HEAD
   </div>
   </body>
+=======
+<<<<<<< HEAD
+  </body>
+=======
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <!----------css and js for login popup----------------------> 
+ 
+  <style>  
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+#popup{ 
+    display:none;
+    z-index:20;
+    position:absolute;
+    text-align:center;
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background:hsla(0, 0%, 0%, 0.6);
+	alpha:60;
+	
+}
+
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+#link{
+  color:white;
+  text-align:center;
+  font-size:15px;
+}
+
+#forgot{
+  color:white;
+  text-align:center;
+  font-size:15px;
+}
+#link:hover{
+  cursor:pointer;
+}
+#logo{
+  text-align:center;
+  font-family:Baloo Tammudu;
+  color:white;
+  position:fixed;
+  width:100%;
+}
+#social{
+font-size:15px;
+font-family:Baloo tammudu;
+color: white;
+margin:5px;
+margin-top:15px;
+}
+#heading{
+  text-align:center;
+  color:white;
+}
+#close{
+font-family:Baloo Tammudu;
+color:white;
+font-size:25px;
+right:1;top:1;
+position:absolute;
+margin-right:10px;
+cursor:pointer;
+}
+#login-box{
+  width:40%;
+  max-height:90%;
+  border:1px solid white;
+  margin: auto;
+  position:absolute;
+  overflow:scroll;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:50px;
+  border-radius:30px;
+  opacity:0;
+  
+  <!-----------creates the background gradient------------------>
+  background: #092756;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+@media screen and (max-width: 500px){
+    #login-box{
+	 width:90%;
+	 max-height:90%;
+	 padding:10px;
+	 border-radius:30px;
+	 }
+  }
+	}
+  </style>
+  <script>
+    $("#link").click(function(){
+	  $('#tag').append('<input type="text"  id="email"  name="u" placeholder="email adress" required="required" />');
+	  $('#tag2').append('<input type="text"  id="confpass"  name="u" placeholder="Confirm password" required="required" />');
+	  $('#link').html('<a id="link2"><u>cancel</u></a>');
+	  $('#forgot').remove();
+	  $('#heading').text('Signup');
+	  $("#login-button").text('Signup');
+	  
+
+	  
+	  $("#link2").click(function(){	
+           location.reload();
+		});
+		});	  
+	$(".login").click(function(){
+	   $('#popup').show();
+	   $('#login-box').animate({
+	      opacity:'1'
+	   });
+	 });
+	 $(".signup").click(function(){
+	   $('#popup').show();
+	   	  $('#tag').append('<input type="text"  id="email"  name="u" placeholder="email adress" required="required" />');
+	  $('#tag2').append('<input type="text"  id="confpass"  name="u" placeholder="Confirm password" required="required" />');
+	  $('#link').html('<a id="link2"><u>cancel</u></a>');
+	  $('#forgot').remove();
+	  $('#heading').text('Signup');
+	  $("#login-button").text('Signup');
+	  $("#link2").click(function(){	
+           location.reload();
+		});
+		});
+	   $('#login-box').animate({
+	      opacity:'1'
+	   });
+    
+	 $("#close").click(function(){	
+           location.reload();
+		});
+
+
+
+</script>  
+  </body>
+>>>>>>> e7fba53e95e3e2968d048d0177f1fd8068dfcea0
+>>>>>>> vijaicv-master
