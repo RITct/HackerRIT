@@ -49,8 +49,13 @@ a{
   display: inline-block; 
   border:none;
   height:60px;
+<<<<<<< HEAD:Scripts/css/beauty.css
   width:100%;
   font-size: 25px;
+=======
+  width:150px;
+  font-size: 20px;
+>>>>>>> e7fba53e95e3e2968d048d0177f1fd8068dfcea0:Scripts/beauty.css
   background-color:#59b1e0;
   color:white;
   transition: .5s;
@@ -207,6 +212,12 @@ a{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 15px;}
 }
+<<<<<<< HEAD:Scripts/css/beauty.css
 hr{
   width:80%;
 }
+=======
+
+
+
+>>>>>>> e7fba53e95e3e2968d048d0177f1fd8068dfcea0:Scripts/beauty.css
