@@ -8,23 +8,33 @@ html,body
     background-color: #191919;
 }
 /*This set consist of all the css part of the HackerRIT Menu Bar for login*/
-.navbar .container-fluid .navbar-header .navbar-toggle {
-  background-color:#59B1E0;
+.banner{
+  border:none;
+  box-shadow: 0 0 5px 0;
+  height:60px;
+  width:100vw;
+  display:flex;
 }
-.navbar-toggle .icon-bar{
-  background-color:white;
+#banner1{
+  flex:12;
+}
+#banner2{
+  flex:1;
+}
+#banner3{
+  flex:1;
 }
 .logo{
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  position:relative;
-  right:5px;  
+  float: left;
+  
 }
 .logoTitle{
   font-size:30px;
   position:relative;
-  top:5px;
+  top:10px;
   left:5px;
   font-family: Georgia;
   color: #2B4156;
@@ -32,7 +42,7 @@ html,body
 a{
   cursor:pointer;
 }
-.key{
+.login,.comp,.discuss{
   display: inline-block; 
   border:none;
   height:60px;
@@ -42,36 +52,46 @@ a{
   font-size:25px;
   color:#59b1e0;
   transition: .5s;
-
+  padding:10px 0 0 10px;
 }
 
 .signup {
   display: inline-block; 
   border:none;
   height:60px;
-
   width:150px;
   font-size: 20px;
   background-color:#59b1e0;
   color:white;
   transition: .5s;
-
+  padding:10px 0px 0px 10px; 
 }
-.glyphicon-user{
-  font-size: 20px;
-}
-.key:hover{
+.login:hover,.comp:hover,.discuss:hover{
    background-color: #eaf3f7;
 }
 .signup:hover{
    background-color: #52a3ce;
 }
-@media screen and (max-width: 768px) {
-  .key{
-    border:solid;
-    border-width:1px 0 0 0;
-    border-color: #59B1E0;
+.banner .icon{
+  display:none;
+}
+.dropdown{
+  display:none;
+}
+@media screen and (max-width: 450px) {
+  .banner{
+    width:100vw;
   }
+  .login,.signup,.comp,.discuss{
+     display:none;
+  }
+  .dropdown{
+    display:inline;
+    position:relative;
+    right:50px;
+    
+  }
+
 }
                       /*-----------------------------------------------------------------------------------*/
 .parallax{
@@ -97,7 +117,7 @@ a{
   border:double;
   border-color: #66FCF1;
   background-color: #191919;
-  padding: 20px 5px 20px 10px;
+  padding: 10px 5px 10px 10px;
   margin:10px auto 10px auto;
   border-radius:10px;
 }
@@ -113,28 +133,76 @@ a{
   .kword{
     font-size:30px;
   }
+  .btn-info{
+  position:relative;
+    left:0;
+  }
   .btn-danger{
   position:relative;
   right:0px;
   }
   }
-
+.items{
+  width:100%;
+  background-image:url("http://www.designbolts.com/wp-content/uploads/2013/12/Silver-Snow-Flakes-Wrapping-Papper-Pattern-2.png");
+  border:none;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ margin-top:50px;
+  padding-top:5px;
+  min-height:300px;
+   }
+.itemTitle{
+  font-family: impact;
+  font-size:50px;
+}
+.icons{
+  display:flex;
+  justify-content: center;
+  
+}
+.icon{
+  border-radius:5px;
+  background: linear-gradient(to bottom, #c5deea 0%,#8abbd7 44%,#066dab 100%);
+  max-width:200px;
+  max-height:200px;
+  padding-top:10px;
+  border:double;
+  border-width: 8px;
+  box-shadow: 0 8px 20px -6px black;
+  flex:1; 
+  flex-basis:10%;
+  margin:10px 20px 10px 20px;
+  }
+.icon img{
+  border-radius:5px;
+  max-width:70px;
+  max-height:70px;
+}
+h3{
+  position:relative;
+  bottom:12px;
+  font-size:20px;
+}
+@media screen and (max-width: 450px) {
+  .icons{
+    flex-wrap:wrap;
+  }
+}
                                       /*---------------------------------------*/
 
 .images {display:none}
 
 
 .gallery {
-  max-width: 900px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top:50px;
 }
 
 .images img{
   max-height:500px;
-  border-radius:15px;
-  
 }
 
 .prev, .next {
@@ -167,9 +235,8 @@ a{
   bottom: 0px;
   width: 100%;
   text-align: center;
-  background-color:rgba(72, 72, 73,0.8);
-  border-bottom-right-radius:15px;
-  border-bottom-left-radius:15px;
+  background-color:rgba(72, 72, 73,0.8)
+  
 }
 .dot {
   cursor:pointer;
@@ -208,22 +275,6 @@ a{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 15px;}
 }
-<<<<<<< HEAD:Scripts/css/beauty.css
-hr{
-  width:80%;
-}
-<<<<<<< HEAD
-.sites{
-  margin:auto;
-}
-.sites a{
-  margin:5px 10px 5px 10px;
-}
-
-=======
-=======
 
 
 
->>>>>>> e7fba53e95e3e2968d048d0177f1fd8068dfcea0:Scripts/beauty.css
->>>>>>> vijaicv-master
