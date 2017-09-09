@@ -276,5 +276,12 @@ h3{
   .prev, .next,.text {font-size: 15px;}
 }
 
-
-
+hr{
+  width:80%;
+}
+.sites{
+  margin:auto;
+}
+.sites a{
+  margin:5px 10px 5px 10px;
+}
