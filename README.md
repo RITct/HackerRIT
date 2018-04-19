@@ -1,2 +1,2 @@
 # HackerRIT
-Open Source Online Codeing Contest Platform
+Open Source Online Coding Contest Platform
